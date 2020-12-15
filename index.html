@@ -489,11 +489,15 @@
             ></textarea>
           </div>
           <div class="accept">
-            <input class="checkbox" type="checkbox" name="accept" id="accept" />
-            <label for="accept"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="accept-link" href="">Условия договора</a></label
-            >
+            <label class="label">
+              <input class="checkbox" type="checkbox" />
+              <svg class="check-svg" width="16px" height="15px">
+                <use href="./images/sprite.svg#iconcheck"></use>
+              </svg>
+              <span class="check-icon"> </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="accept-link" href=""> Условия договора</a>
+            </label>
           </div>
           <button type="button" class="button">Отправить</button>
         </form>

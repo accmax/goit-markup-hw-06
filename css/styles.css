@@ -557,6 +557,10 @@ li .primary {
   fill: var(--white-color);
 }
 
+.form-field .footer-input {
+  padding-left: 16px;
+}
+
 /* Portfolio */
 /* Фильтр */
 
@@ -864,6 +868,8 @@ textarea:focus {
   border-color: var(--accent-color);
 }
 
+/* чекбокс */
+
 .accept {
   display: inline-flex;
   margin-bottom: 30px;
@@ -874,9 +880,48 @@ textarea:focus {
 .accept-link {
   display: inline;
   text-decoration: underline;
+  margin-left: 4px;
   color: var(--accent-color);
 }
 
 .checkbox {
-  margin-right: 7px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.label {
+  position: relative;
+  display: inline-flex;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked ~ .check-icon {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox:checked ~ .check-svg {
+  opacity: 1;
+}
+
+.check-svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
 }
