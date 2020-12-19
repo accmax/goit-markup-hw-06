@@ -329,22 +329,24 @@
         </div>
         <div class="container-footer subscribe">
           <p>Подпишитесь на рассылку</p>
-          <div class="form-field footer">
-            <label for="name" class="form-label"></label>
-            <input
-              class="footer-input"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="E-mail"
-            />
-            <button type="button" class="button subscribe">
-              Подписаться
-              <svg class="subscribe-icon" width="24px" height="24px">
-                <use href="./images/sprite.svg#send"></use>
-              </svg>
-            </button>
-          </div>
+          <form>
+            <div class="form-field footer">
+              <label for="mail-footer" class="form-label"></label>
+              <input
+                class="footer-input"
+                type="email"
+                name="mail-footer"
+                id="mail-footer"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button subscribe">
+                Подписаться
+                <svg class="subscribe-icon" width="24px" height="24px">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
